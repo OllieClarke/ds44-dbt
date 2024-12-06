@@ -32,6 +32,7 @@ sources:
                 to: source('jaffle_shop','customers')
                 field: id
         - name: status
+          description: "{{doc('order_status')}}"
           tests:
             - accepted_values:
                 values: ['returned','completed','return_pending','shipped','placed']
